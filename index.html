@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Developer Agency</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/icon.png" />
+
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="bootstrap/css/estilo.css" />
+        <script src="bootstrap/js/jquery.min.js" type="text/javascript"></script>
+        <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+        <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+        <link href="bootstrap/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+        <script>
+            /*SMOOTH SCROLL*/
+            $(function () {
+                $('a[href*=#]:not([href=#])').click(function () {
+                    if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        if (target.length) {
+                            $('html,body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000);
+                            return false;
+                        }
+                    }
+                });
+            });
+            /*END SMOOTH SCROLL*/
+            
+        </script>
+
+    </head>
+
+    <body>
+        <!--START MENU-->
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inner" id="nav"  
+             style="border-bottom: thin solid #AE333F;">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".menu-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-top" href="#home">
+                        <img class="img-responsive" style="width: 60%" src="images/logo.png" alt="Developer Agency" />
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-inner menu-nav">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#home" class="">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="">SERVICES</a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="">PROJECTS</a>
+                        </li>
+                        <li>
+                            <a href="#team" class="">TEAM</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="">CONTACT</a>
+                        </li>
+                        <li>
+                            <a href="" class="">BLOG</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <!--END MENU-->
+
+        <!--HOME PAGE-->
+        <section class="" id="home" style="height: 100vh;background-image: url(images/banner/fundo01.jpg); background-repeat: no-repeat; background-size: cover">
+            <div class="container">
+                <div class="row" style="">
+                    <div class="col-lg-12 col-xs-12 col-md-12">
+
+                        <div class="row">
+                            <div class="col-lg-12 col-xs-12 col-md-12" >
+                                <!--BANNER-->
+                                <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+
+                                    <ol class="carousel-indicators" style="/*background-color: rgba(125, 120, 120, 0.8); width: 30%; */">
+                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                                    </ol>
+
+                                    <!-- Indicators -->
+                                    <br />
+
+                                    <div class="carousel-inner">
+                                        <div class="item active"> 
+                                            <img class="" src="images/banner/site-responsive.png" style="width:100%" alt="First slide">
+                                            <div class="container">
+                                                <div class="carousel-caption">
+                                                    <div style=" background-color: #f00; posição:absoluta; z-index:-1; top:0; left:0; right:0; bottom:0; opacity:0.2;"></div> 
+                                                    <div class="caption01 ">
+                                                        <h3 class="font-bold">
+                                                            We develop responsive websites using the latest 
+                                                            technologies to make unique and enjoyable browsing 
+                                                            experience.
+                                                        </h3>    
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item"> 
+                                            <img class="img-responsive" src="images/banner/seo.jpg" style="width:100%" data-src="" alt="Second    slide">
+                                            <div class="container">
+                                                <div class="carousel-caption">
+                                                    <div class="caption02">
+                                                        <h3 class="font-bold">SEO (Search Engine Optimization)</h3>
+                                                        <p class="font-thin">
+                                                            We work with various techniques to make your site has excellent results in search engines.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item"> 
+                                            <img class="img-responsive" src="images/banner/team.jpg" style="width:100%" data-src="" alt="Third slide">
+                                            <div class="container"><!--tamanho da imagem 1200/400-->
+                                                <div class="carousel-caption">
+                                                    <div class="caption03">
+                                                        <p class="font-bold">
+                                                            Our team works with delight to give you a unique and and enjoyable experience.    
+                                                        </p>
+                                                        <p>
+                                                            <a class="btn btn-lg btn-danger" href="#team" role="button">Meet our team</a>
+                                                            <br /><br />
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--
+                                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                    </a> 
+                                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                    </a> -->
+                                </div>
+                                <!--END BANNER-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--END HOME PAGE-->
+
+        <!--SERVICES PAGE-->
+        <section class="color_div" id="services">
+            <div class="container">
+
+                <div class="row title-row text-center shadow-text">
+                    <div class="col-xs-12 font-thin">We are very proud of our work...<br /> 
+                        <span class="font-bold">...And we want you to be part of it.</span>
+                        <p>What we do</p><hr />
+                    </div>
+                </div><!-- /row -->
+
+                <div class="row content-row">
+
+                    <div class="col-xs-12 col-lg-3 col-sm-6">
+                        <div class="text-center">
+                            <i class="icon icon-tablet"></i>
+                        </div>
+                        <h2 class="font-thin text-center shadow-text">Mobile <span class="font-bold">Apps</span></h2>
+                        <h4 class="font-thin">
+                            We develop mobile apps for all platforms. Discover what is the best mobile platform for you.
+                        </h4>
+                    </div><!-- /col12 -->
+
+                    <div class="col-xs-12 col-lg-3 col-sm-6">
+                        <div class="text-center">
+                            <i class="icon icon-laptop"></i>
+                        </div>
+                        <h2 class="font-thin text-center shadow-text">Web <span class="font-bold">Design</span></h2>
+                        <h4 class="font-thin">
+                            We develop a clean and responsive layout for your site, can be accessed on any 
+                            device connected to the Internet.    
+                        </h4>
+                    </div><!-- /col12 --> 
+
+                    <div class="col-xs-12 col-lg-3 col-sm-6">
+                        <div class="text-center">
+                            <i class="icon icon-eye-open"></i>
+                        </div>
+                        <h2 class="font-thin text-center shadow-text">Visual <span class="font-bold">Identity</span></h2>
+                        <h4 class="font-thin">
+                            We created the visual identity of your company as logo, social networking and 
+                            application for mobiles.    
+                        </h4>
+                    </div><!-- /col12 -->                                       
+
+                    <div class="col-xs-12 col-lg-3 col-sm-6">
+                        <div class="text-center">
+                            <i class="icon icon-pencil"></i>
+                        </div>
+                        <h2 class="font-thin text-center shadow-text"><span class="font-bold">Develop</span>ment</h2>
+                        <h4 class="font-thin">
+                            We develop dynamic systems for your comfort and that perfectly meets your needs.
+                        </h4>
+                    </div><!-- /col12 -->
+                </div><!-- /row -->
+            </div><!-- /container -->
+        </section>
+        <!--END SERVICES PAGE-->
+
+        <!--PROJECTS PAGE-->
+        <section class="" id="projects">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-xs-12 col-md-12">
+                        <div class="row title-row text-center shadow-text font-color">
+                            <p><i class="icon icon-flag"></i> Projects and Partners</p><hr />
+                        </div>
+                    </div><!-- /row -->
+
+                    <div class="row content-row font-color">
+                        <div class="col-xs-12 col-lg-3 col-sm-6">                           
+                            <h4 class="font-thin">
+                                <img src="images/logos/starjava.png" class="img-responsive img-rounded grayscale" />
+                            </h4>
+                        </div><!-- /col12 -->
+
+                        <div class="col-xs-12 col-lg-3 col-sm-6">
+
+                            <h4 class="font-thin">
+                                <img src="images/logos/appminion.png" class="img-responsive img-rounded grayscale" />  
+                            </h4>
+                        </div><!-- /col12 -->
+
+                        <div class="col-xs-12 col-lg-3 col-sm-6">
+
+                            <h4 class="font-thin">
+                                <img src="images/logos/sharedpicture.png" class="img-responsive img-rounded grayscale" />  
+                            </h4>
+                        </div><!-- /col12 -->
+
+                        <div class="col-xs-12 col-lg-3 col-sm-6">
+
+                            <h4 class="font-thin">
+                                <img src="images/logos/yellowstar.png" class="img-responsive img-rounded grayscale" />  
+                            </h4>
+                        </div><!-- /col12 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--END PROJECTS PAGE-->
+
+        <!--TEAM PAGE-->
+        <section class="color_div" id="team">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-xs-12 col-md-12">
+                        <div class="col-lg-12 col-xs-12 col-md-12">
+                            <div class="row title-row text-center shadow-text font-color">
+                                <p><i class="icon icon-user"></i> Meet our team</p><hr />
+                            </div>
+                        </div><!-- /row -->
+
+                        <div class="row">
+                            <div class="col-lg-3 col-xs-12 col-sm-6">
+                                <img src="http://iphone-unlocker.org/img/team/smiley.png" class="img-circle img-responsive _border"/>
+                                <div class="caption">
+                                    <h3 class="text-center">James Frank</h3>
+                                    <p class="text-center">CEO & Co-founder</p>
+                                    <ul class="list-inline social-buttons text-center">
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-xs-12 col-sm-6">
+                                <img src="http://themelovin.com/demo/kult/wp-content/uploads/2013/12/team-member-441x441.jpg" class="img-circle img-responsive _border"/>
+                                <div class="caption">
+                                    <h3 class="text-center">John Sanders</h3>
+                                    <p class="text-center">CLO & Co-Founder</p>
+                                    <ul class="list-inline social-buttons text-center">
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-xs-12 col-sm-6">
+                                <img src="http://www.marinmazdasubaru.com/team/9f.jpg" class="img-circle img-responsive _border"/>
+                                <div class="caption">
+                                    <h3 class="text-center">Irina Andrews</h3>
+                                    <p class="text-center">CFO & Co-Founder</p>
+                                    <ul class="list-inline social-buttons text-center">
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-xs-12 col-sm-6">
+                                <img src="http://www.filiwiese.com/wp-content/uploads/2012/10/filiwiese-e1398461646959.jpg" class="img-circle img-responsive _border"/>
+                                <div class="caption">
+                                    <h3 class="text-center">Joseph Carlton</h3>
+                                    <p class="text-center">COO & Co-Founder</p>
+                                    <ul class="list-inline social-buttons text-center">
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--END TEAM PAGE-->
+
+        <!--CONTACT PAGE-->
+        <section class="" id="contact" style="background-image: url(http://www.impactotecnologia.com.br/images/fundo-contato-u2612-fr.png); background-repeat: no-repeat; background-size: cover">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-xs-12 col-md-12">
+                        <div class="col-lg-12 col-xs-12 col-md-12">
+                            <div class="row title-row text-center shadow-text font-color">
+                                <p><i class="icon icon-envelope"></i> Contact</p><hr />
+                            </div>
+                        </div><!-- /row -->
+
+                        <div class="row font-bold font-color shadow-text">
+                            <div class="col-xs-12 col-lg-4 col-md-12">
+                                <div class="col-lg-12 col-xs-12 col-md-12 text-center">
+                                    <i class="icon icon-map-marker"></i>
+                                    <p>
+                                        Rua Lauro Linhares, 2123, 802-B<br />
+                                        Florianópolis/SC - Brazil
+                                    </p>
+                                </div>
+                                <div class="col-lg-12 col-xs-12 col-md-12 text-center">
+                                    <i class="icon icon-phone"></i>
+                                    <p>
+                                        +55 (48) 3206-5246
+                                    </p>
+                                </div>
+                                <div class="col-lg-12 col-xs-12 col-md-12 text-center">
+                                    <i class="icon icon-envelope"></i>
+                                    <p>
+                                        contact@ckl.io
+                                    </p>
+                                </div>
+                                <div class="col-lg-12 col-xs-12 col-md-12 text-center">
+                                    <i class="icon icon-calendar"></i>
+                                    <p>
+                                        BRST: Mon-Fri 8 AM to 6 PM<br />
+                                        PST: Mon-Fri 2 AM to 12 PM
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-lg-8 col-md-8">
+                                <form method="post" action="index.html#contact">
+                                    <div class="col-lg-12 col-xs-12 col-md-12">
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control input-lg" value="Name:" onfocus="this.value = '';" onblur="if (this.value == '') {
+                                                        this.value = 'Name';
+                                                    }">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control input-lg" value="E-mail:" onfocus="this.value = '';" onblur="if (this.value == '') {
+                                                        this.value = 'E-mail';
+                                                    }">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control input-lg" value="Phone:" onfocus="this.value = '';" onblur="if (this.value == '') {
+                                                        this.value = 'Phone';
+                                                    }">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <textarea value="Message:" class="form-control input-lg" onfocus="this.value = '';" onblur="if (this.value == '') {
+                                                        this.value = 'Message:';
+                                                    }">Message</textarea>
+                                        </div>
+                                        <div class="row">
+                                            <br />
+                                            <div class="col-sm-6">
+                                                <button type="submit" name="send" class="btn btn-danger btn-lg">Send Form</button>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </form>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--END CONTACT PAGE-->
+
+        <!--FOOTER-->
+        <footer class="color_div">
+            <div class="container footer">
+                <div class="row">
+                    <div class="col-sm-4 text-left">
+                        2015 <span class="glyphicon glyphicon-copyright-mark"></span><br />
+                        All rights reserved
+                    </div>
+
+                    <div class="col-sm-4 text-center">
+                        <ul class="list-inline social-buttons text-center">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-4 text-right">
+                        <small>Developer by:</small><br/>
+                        <strong><a href="#" target="_blank">EDSON RODRIGUES</a></strong>
+                    </div>
+                </div>  
+            </div>
+        </footer>
+        <!--END FOOTER-->
+
+
+
+
+    </body>
+</html>
